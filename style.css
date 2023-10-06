@@ -1,0 +1,24 @@
+.startPage{
+    display: flex;
+    flex-direction: row;
+}
+
+.entryDescription{ 
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+#startBtn{
+    width: 170px;
+    height: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnSide{
+    width: 50%;
+    margin-top: 20%;
+}
