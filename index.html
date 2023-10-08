@@ -8,35 +8,41 @@
 </head>
 <body>
     <div class="container">
-        <div class="startPage" style="display:flex">
+        <div id="startPage" style="display:flex">
             <div class="headerSide">
-                <h1 class="entryTitle">Coffee Quiz for Baristas</h1>
+                <h1 class="entryTitle">Espresso Expertise Exam</h1>
                 <div class="entryDescription">
                     <p class="entryText">This quiz is designed to test your knowledge of all things coffee. 
-                        It is intended for baristas, but anyone can take it! You have 60 seconds on the clock,
+                        It's intended for baristas, but anyone can take it! You have 60 seconds on the clock,
                         so answer the questions as fast and as accurate as possible to get the best score</p>
+                    <p class="entryText">Scoring: For each question answered wrong, an additional 3 seconds will be taken from
+                        the remaining time. Your score will be the number of questions answered correctly & how many seconds you have left on the timer!
+                    </p>
                     <p class="entryText">Press the icon to begin!</p>
                 </div>
             </div>
             <div class="btnSide">
-                <button id="startBtn"></button>
+                <button id="startBtn">Start Quiz</button>
             </div>
         </div>
-        <div class="quizPage" style="display:none">
+        <div id="quizPage" style="display:none">
+            <button id="quizHomeBtn">← Back</button>
             <div id="timer">Seconds Left: 60</div>
             <div id="questions"></div>
-            <div class="choiceBtn" id="a"></div>
-            <div class="choiceBtn" id="b"></div>
-            <div class="choiceBtn" id="c"></div>
-            <div class="choiceBtn" id="d"></div>
+            <button class="choiceBtn" id="a"></button>
+            <button class="choiceBtn" id="b"></button>
+            <button class="choiceBtn" id="c"></button>
+            <button class="choiceBtn" id="d"></button>
         </div>
-        <div class="resultsPage" style="display:none">
+        <div id="resultsPage" style="display:none">
             <div>
                 <div id="finalScore"></div>
                 <button id="restartBtn">Play Again</button>
+                <button id="homeBtn">Home</button>
             </div>
         </div>
     </div>
+   
     <script src="/script.js"></script>
 </body>
 </html>
