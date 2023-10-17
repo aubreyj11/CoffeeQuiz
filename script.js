@@ -91,7 +91,7 @@ function questionAnswered(e) {
         //     title: 'Correct!',
         //     text: 'Click OK to continue'
         //   })
-        alert("Correct!");
+        // alert("Correct!");
           score++;
     } else {
         // fire({
@@ -99,7 +99,7 @@ function questionAnswered(e) {
         //     title: 'Incorrect',
         //     text: 'Click OK to continue'
         //   })
-        alert("Incorrect!");
+        // alert("Incorrect!");
           timeLeft -= 3;
     }
     currentQuestion++;

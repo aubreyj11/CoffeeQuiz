@@ -18,21 +18,25 @@
                     <p class="entryText">Scoring: For each question answered wrong, an additional 3 seconds will be taken from
                         the remaining time. Your score will be the number of questions answered correctly & how many seconds you have left on the timer!
                     </p>
-                    <p class="entryText">Press the icon to begin!</p>
+                    <p class="entryText">Press the start button to begin!</p>
+                    <button id="startBtn">Start Quiz</button>
+                    
                 </div>
+                
             </div>
-            <div class="btnSide">
-                <button id="startBtn">Start Quiz</button>
-            </div>
+            <img id="coffeeImg" src="icons/SB-logo.png" alt="Starbucks Coffee">
         </div>
         <div id="quizPage" style="display:none">
             <button id="quizHomeBtn">← Back</button>
-            <div id="timer">Seconds Left: 60</div>
-            <div id="questions"></div>
-            <button class="choiceBtn" id="a"></button>
-            <button class="choiceBtn" id="b"></button>
-            <button class="choiceBtn" id="c"></button>
-            <button class="choiceBtn" id="d"></button>
+            <div id="timer">60 Seconds Left!</div>
+            <img id="questionImg" src="icons/Siiren.png" alt="Starbucks Logo">
+            <div id="questionContainer">
+                <div id="questions"></div>
+                <button class="choiceBtn" id="a"></button>
+                <button class="choiceBtn" id="b"></button>
+                <button class="choiceBtn" id="c"></button>
+                <button class="choiceBtn" id="d"></button>
+            </div>
         </div>
         <div id="resultsPage" style="display:none">
             <div>
@@ -43,6 +47,9 @@
         </div>
     </div>
    
+
+    
+    
     <script src="/script.js"></script>
 </body>
 </html>
