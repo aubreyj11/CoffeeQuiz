@@ -71,6 +71,30 @@ var quizQuestions = [{
     choiceC: "Iced Chai Latte",
     choiceD: "Iced Caramel Macchiato",
     correctAnswer: "a"
+},
+{
+    question: "Which one of these drinks gets 3 Espresso shots?",
+    choiceA: "Grande Latte",
+    choiceB: "Grande Flat White",
+    choiceC: "Grande Matcha Latte",
+    choiceD: "Grande Caramel Macchiato",
+    correctAnswer: "b"
+},
+{
+    question: "Which category of food item buttons contains 'Loaf' on the oven?",
+    choiceA: "Pastry",
+    choiceB: "Breakfast Sandwiches",
+    choiceC: "Bagel & Breads",
+    choiceD: "Croissant & Danish",
+    correctAnswer: "c"
+},
+{
+    question: "How many full pumps of classic syrup go in a grande iced shaken espresso?",
+    choiceA: "3",
+    choiceB: "4",
+    choiceC: "1",
+    choiceD: "2",
+    correctAnswer: "d"
 }];
 
 var currentQuestion = 0;
@@ -86,20 +110,10 @@ function loadQuestion() {
 
 function questionAnswered(e) {
     if (e.currentTarget.id === quizQuestions[currentQuestion].correctAnswer) {
-        // fire({
-        //     icon: 'success',
-        //     title: 'Correct!',
-        //     text: 'Click OK to continue'
-        //   })
-        // alert("Correct!");
+        
           score++;
     } else {
-        // fire({
-        //     icon: 'error',
-        //     title: 'Incorrect',
-        //     text: 'Click OK to continue'
-        //   })
-        // alert("Incorrect!");
+        
           timeLeft -= 3;
     }
     currentQuestion++;
